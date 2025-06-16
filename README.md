@@ -106,3 +106,11 @@
     Code sharing via packages/
 
     Dev script control per app or all at once
+
+### Steps to run this monoreop
+    1). git clone https://github.com/theranjitkumar/MonoRepo_project.git
+
+    2). pnpm install
+
+    3). pnpm dev:all
+
