@@ -1,0 +1,26 @@
+{
+  "name": "jsondevtool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "pnpm --filter web start",
+    "dev:admin": "pnpm --filter admin start",
+    "dev:api": "pnpm --filter api start",
+    "dev:all": "concurrently \"pnpm dev:web\" \"pnpm dev:admin\" \"pnpm dev:api\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [],
+  "author": "Ranjitk",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1",
+  "dependencies": {
+    "@angular/cli": "^20.0.2"
+  }
+}
